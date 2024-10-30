@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Sosial</title>
+    <style>
+        /* Style untuk body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Container utama */
+        .social-media-container {
+            width: 90%;
+            max-width: 400px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Judul utama */
+        .social-media-container h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* List akun media sosial */
+        .social-media-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Style untuk setiap item akun */
+        .social-media-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Efek hover untuk item akun */
+        .social-media-item:hover {
+            background-color: #f4f4f4;
+        }
+
+        /* Style untuk ikon */
+        .social-media-item i {
+            font-size: 24px;
+            color: #2a9d8f;
+        }
+
+        /* Style khusus untuk setiap ikon */
+        .facebook i { color: #4267B2; }
+        .instagram i { color: #E1306C; }
+        .twitter i { color: #1DA1F2; }
+        .linkedin i { color: #2867B2; }
+        .youtube i { color: #FF0000; }
+
+    </style>
+    <!-- Link ke Font Awesome untuk ikon media sosial (butuh koneksi internet) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="social-media-container">
+        <h1>Ikuti Saya di Media Sosial</h1>
+        <ul class="social-media-list">
+            <!-- Facebook -->
+            <li class="social-media-item facebook">
+                <a href="https://www.facebook.com" target="_blank" class="social-media-item">
+                    <i class="fab fa-facebook-square"></i> Facebook
+                </a>
+            </li>
+            <!-- Instagram -->
+            <li class="social-media-item instagram">
+                <a href="https://www.instagram.com" target="_blank" class="social-media-item">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </li>
+            <!-- Twitter -->
+            <li class="social-media-item twitter">
+                <a href="https://www.twitter.com" target="_blank" class="social-media-item">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+            </li>
+            <!-- LinkedIn -->
+            <li class="social-media-item linkedin">
+                <a href="https://www.linkedin.com" target="_blank" class="social-media-item">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </li>
+            <!-- YouTube -->
+            <li class="social-media-item youtube">
+                <a href="https://www.youtube.com" target="_blank" class="social-media-item">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

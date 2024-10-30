@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pendidikan</title>
+    <style>
+        /* Style untuk body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Style untuk container utama */
+        .education-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style untuk judul halaman */
+        .education-header {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0f3b5b;
+        }
+
+        .education-header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        /* Style untuk tiap item pendidikan */
+        .education-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #e3f2fd;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .education-item:hover {
+            transform: scale(1.02);
+        }
+
+        .education-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #0f3b5b;
+            margin: 0;
+        }
+
+        .education-degree {
+            font-size: 1em;
+            color: #555;
+            margin: 5px 0 10px;
+        }
+
+        .education-year {
+            font-size: 0.9em;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .education-description {
+            font-size: 0.9em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .pendidikan-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px;
+            background-color: #f4f4f4;
+        }
+
+        .pendidikan-buttons a {
+            padding: 10px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .home-btn {
+            background-color: #0f3b5b;
+            color:#fffefe;
+        }
+
+        .home-btn:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="education-container">
+        <!-- Header -->
+        <div class="education-header">
+            <h1>Riwayat Pendidikan</h1>
+        </div>
+
+        <!-- Item Pendidikan 1 -->
+        <div class="education-item">
+            <p class="education-title"><strong>Universitas Pendidikan Indonesia</strong> - Bandung, Jawa Barat</p>
+            <p class="education-degree">Pendidikan Ilmu Komputer</p>
+            <p class="education-year">2023 - Present</p>
+            <p class="education-description">Mengambil jurusan Pendidikan Informatika dengan fokus pada pembelajaran dan pengembangan sistem berbasis teknologi. Belajar tentang algoritma, pemrograman, dan pengajaran informatika.</p>
+        </div>
+
+        <!-- Item Pendidikan 2 -->
+        <div class="education-item">
+            <p class="education-title">SMA Negeri 1 Indramayu</p>
+            <p class="education-degree">Matematika dan Ilmu Pengetahuan Alam</p>
+            <p class="education-year">2020 - 2023</p>
+            <p class="education-description">Memperdalam pengetahuan dasar dalam bidang sains, matematika, dan teknologi sebagai bekal dalam melanjutkan ke jenjang pendidikan tinggi di bidang informatika.</p>
+        </div>
+
+        <!-- Item Pendidikan 3 -->
+        <div class="education-item">
+            <p class="education-title">SMP IT Mutiara Al Irsyady</p>
+            <p class="education-degree">Sekolah Menengah Pertama</p>
+            <p class="education-year">2017 - 2020</p>
+            <p class="education-description">Menyelesaikan pendidikan menengah pertama dengan dasar pengetahuan umum dan pengembangan keterampilan sosial serta komunikasi.</p>
+        </div>
+
+        <div class="pendidikan-buttons">
+            <a href="{% url 'home' %}" class="home-btn">Back</a>
+    </div>
+</body>
+</html>

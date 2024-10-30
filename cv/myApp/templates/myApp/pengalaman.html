@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pengalaman</title>
+    <style>
+        .pengalaman-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style untuk body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        /* Container utama */
+        .experience-container {
+            width: 90%;
+            max-width: 800px;
+        }
+
+        /* Heading utama */
+        .experience-container h1 {
+            text-align: center;
+            color: #0f3b5b;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        /* Style untuk setiap card pengalaman */
+        .experience-card {
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Efek hover untuk card */
+        .experience-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Judul pengalaman */
+        .experience-card h2 {
+            margin: 0;
+            color: #333;
+            font-size: 24px;
+        }
+
+        /* Nama organisasi */
+        .experience-card h3 {
+            margin: 5px 0;
+            font-size: 18px;
+            color: #0f3b5b;
+        }
+
+        /* Tahun dan posisi */
+        .experience-card .experience-meta {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Deskripsi pengalaman */
+        .experience-card p {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .pengalaman-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px;
+            background-color: #f4f4f4;
+        }
+
+        .pengalaman-buttons a {
+            padding: 10px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .home-btn {
+            background-color: #0f3b5b;
+            color:#fffefe;
+        }
+
+        .home-btn:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="pengalaman-container">
+    <div class="experience-container">
+        <h1>Pengalaman Organisasi & Kepanitian</h1>
+
+        <!-- Card untuk pengalaman organisasi atau kepanitian -->
+        <div class="experience-card">
+            <h2>Sekretaris Umum 2</h2>
+            <h3>BEM Keluarga Mahasiswa Ilmu Komputer</h3>
+            <div class="experience-meta">2024 - Present</div>
+            <p>
+                Mengatur, mengelola, dan bertanggungjawab terhadap administrasi dan pengarsipan BEM Kemakom.
+                Bertanggungjawab mencatat notulen rapat besar BEM Kemakom.
+                Memeriksa dan mengevaluasi administrasi dari beberapa divisi di dalam BEM Kemakom.
+            </p>
+        </div>
+
+        <div class="experience-card">
+            <h2>Panitia Bidang Dokumentasi</h2>
+            <h3>Seminar Nasional Teknologi</h3>
+            <div class="experience-meta">2022</div>
+            <p>
+                Bertugas untuk mendokumentasikan seluruh kegiatan dalam seminar, termasuk foto dan video. 
+                Mempastikan hasil dokumentasi dapat digunakan untuk promosi dan arsip organisasi.
+            </p>
+        </div>
+
+        <div class="experience-card">
+            <h2>Sekretaris</h2>
+            <h3>Himpunan Mahasiswa Komputer</h3>
+            <div class="experience-meta">2021 - 2022</div>
+            <p>
+                Mencatat dan mengatur segala administrasi serta surat-menyurat organisasi. 
+                Membantu menjaga jalannya komunikasi yang efektif antar anggota dan pengurus.
+            </p>
+        </div>
+
+        <div class="pengalaman-buttons">
+            <a href="{% url 'home' %}" class="home-btn">Back</a>
+        </div>
+
+        <!-- Tambahkan lebih banyak card untuk pengalaman lain sesuai kebutuhan -->
+    </div>
+    </div>
+</body>
+</html>
